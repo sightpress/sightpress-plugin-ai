@@ -1,9 +1,10 @@
-# SightPress AI
+# SightPress AI helper
 
-`sightpress/plugin-ai`: the official SightPress plugin for optional AI
+`sightpress/plugin-ai-helper`: the official SightPress plugin for optional AI
 assistance. Licensed GPL-2.0-or-later.
 
-> **Status:** pre-M0.
+> **Status:** M0 scaffolding in place (manifest, bundle, quality gates, CI);
+> features arrive in milestone M13.
 
 AI is always optional: every workflow works fully with this plugin off, it
 uses the tenant's **own** provider key (bring your own key), and every piece of
@@ -34,5 +35,4 @@ npx playwright test         # every manifest route, with axe-core
 
 Fake providers and recorded responses only; CI never uses real keys or calls a
 real AI provider. Check out `sightpress/core` as a sibling and require it with
-`COMPOSER=composer.dev.json composer install` to run the test kernel. The full
-plugin specification is in `plugins.md` §1.1.
+`COMPOSER=composer.dev.json composer install` to run the test kernel.
